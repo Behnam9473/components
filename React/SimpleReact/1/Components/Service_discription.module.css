@@ -1,0 +1,16 @@
+.decoration{
+    background-color: #ecbb17;
+    height: 10vh;
+    width:100vw;
+    margin-bottom: 10px;
+}
+
+.service_description{
+    text-align: center;
+    font-size: 1.2em;
+    color: #f0ebeb;
+    line-height: 1.6;
+    /* text-align: justify; */
+    padding: 0;
+    margin: 0;
+}

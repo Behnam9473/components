@@ -1,0 +1,86 @@
+.inlinecard {
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+}
+
+
+.card {
+    position: relative;
+    top: 20%;
+    left: auto;
+    transform: translate(-1%, -40%);
+    width: 30vh;
+    height: 40%;
+    padding: 0 0 80px 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    margin: 1.5rem;
+    box-shadow: rgb(129, 160, 201) 10px -20px 30px -10px;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px 5px 5px 5px;
+
+}
+.card:hover{
+    box-shadow: rgb(129, 160, 201) 10px -20px 30px -10px;
+}
+
+
+/* Add rounded corners to the top left and the top right corner of the image */
+.card_image {
+    border-radius: 5px 5px 0 0;
+    height: 980;
+    width: 1080;
+}
+.text{
+    margin-top: 0;
+    display: inline;
+    color: white;
+    align-items: center;
+    align-content:center;
+    justify-content: center;
+    justify-items: center;
+
+}
+
+.left_border_text{
+    border-left:solid white;
+
+}
+
+
+@media screen and (max-width: 756px) {
+    .inlinecard {
+        display: flex;
+        flex-direction: column;
+        /* justify-items: center; */
+        z-index: 0;
+        align-items: center;
+        vertical-align: middle;
+    }
+
+    .card {
+
+        margin-top: 0;
+        transform: translate(0, 0);
+        vertical-align: middle;
+        width: 90%;
+        height: 30vh;
+    }
+
+
+}
+
+@media (min-width: 1380px) {
+
+
+    .card {
+        margin-top: 0;
+        transform: translate(0, -25px);
+  
+    }
+
+
+}

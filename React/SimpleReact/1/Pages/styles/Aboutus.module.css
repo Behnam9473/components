@@ -1,0 +1,170 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2f2f2f;
+    color: #0c0c0c;
+}
+
+.Parent {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    margin: 0 0;
+    gap: 0;
+}
+
+.child1 {
+    flex: 1;
+    min-width: 300px;
+    padding: 2.5rem;
+    /* border: 1px solid #ddd; */
+    border-radius: 8px;
+    background-color: #1b1a1a;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+}
+
+
+.child2 {
+    position: relative;
+    flex: 1.2;
+    min-width: 300px;
+    padding: 20px;
+    border: 1px solid #080808;
+    border-radius: 8px;
+    background-color: #1b1a1a;
+    
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    padding: 1.5rem;
+    align-items: center;
+    align-content: center;
+}
+
+.child2 img {
+    width: 90%;
+    height: 70%;
+    align-items: center;
+
+}
+.child2::before {
+    content: "";
+    position: absolute;
+    top: 50px; /* Adjust position as needed */
+    left: -10px; /* Adjust position as needed */
+    width: calc(50% + 20px); /* Adjust size as needed */
+    height: calc(50% + 20px); /* Adjust size as needed */
+    background-color: #ffc107;
+    z-index: 0;
+    border-radius: 8px; /* Match the radius if needed */
+}
+
+.child2 img {
+    position: relative; /* Ensure the image is above the pseudo-element */
+    z-index: 2;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.child1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.aboutus {
+    margin-bottom: 20px;
+}
+
+.aboutus h1 {
+    font-size: 2em;
+    color: #f7f1f1;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    color: #f0ebeb;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+
+/* CSS */
+.btn {
+    appearance: none;
+    background-color: #f7f5f1ea;
+    border-width: 0;
+    box-sizing: border-box;
+    color: #111010;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Clarkson, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1em;
+    margin: 0;
+    opacity: 1;
+    outline: 0;
+    padding: 1.5em 2.2em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-rendering: geometricprecision;
+    text-transform: uppercase;
+    transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1), background-color 100ms cubic-bezier(.694, 0, 0.335, 1), color 100ms cubic-bezier(.694, 0, 0.335, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    white-space: nowrap;
+    font-size: large;
+    border-radius: 0.5rem;
+}
+
+.btn:before {
+    animation: opacityFallbackOut .5s step-end forwards;
+    backface-visibility: hidden;
+    background-color: #e7b40cc0;
+    border-radius: 0.5rem;
+
+    clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translateZ(0);
+    transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+    width: 100%;
+}
+
+.btn:hover:before {
+    animation: opacityFallbackIn 0s step-start forwards;
+    clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+.btn:after {
+    background-color: #ecbb17;
+}
+
+.btn span {
+    z-index: 1;
+    position: relative;
+}
+
+iframe {
+    position: relative; /* Ensure the image is above the pseudo-element */
+    z-index: 2;
+    width: 70%;
+    height: 40vh;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+
+

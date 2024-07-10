@@ -1,0 +1,138 @@
+/* Navbar.module.css */
+body {
+    font-family: Arial, sans-serif;
+
+}
+
+.navbar {
+    background: #262626;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    direction: rtl;
+
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 20px;
+}
+
+.navbar-brand a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    align-items: center;
+
+}
+
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    text-align: center;
+}
+
+.nav-item {
+    height: 6px;
+}
+
+.nav-links {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links:hover {
+    background: #555;
+    border-radius: 4px;
+}
+
+
+
+.white {
+    color: white;
+}
+
+.gold {
+    color: goldenrod;
+}
+
+@media screen and (max-width: 768px) {
+
+    .navbar-container {
+        display: flex;
+        justify-content: space-between;
+        height: 60px;
+        width: 100%;
+        max-width: 1000px;
+        padding: 0 20px;
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+
+
+    .nav-menu {
+        padding-right: 0;
+        display: flex;
+        flex-direction: column;
+        vertical-align: middle;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 60px;
+        /* right: -100%; */
+        opacity: 0;
+        transition: all 0.8s ease;
+        background: #333;
+        z-index: 0;
+
+    }
+
+    .nav-menu.active {
+        right: 0;
+        opacity: 1;
+        color: gold;
+        z-index: 100;
+
+    }
+
+    .nav-item {
+        width: 100%;
+        margin-top: 2.5rem;
+
+
+    }
+
+    .nav-links {
+        text-align: center;
+        width: 100%;
+        display: table;
+        color: rgb(245, 244, 240);
+
+
+    }
+
+
+}

@@ -1,0 +1,114 @@
+.overview{
+    display: flex;
+    background-color: #ffc107;
+    height: 20vh;
+}
+
+.wp_block{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+[data-separator] {
+    position: relative
+}
+
+[data-separator]:after {
+    background-color: currentColor;
+    content: "";
+    display: block;
+    position: absolute
+}
+
+@media(max-width: 39.99em) {
+    .overview{
+        display: flex;
+        flex-direction: column;
+        background-color: #ffc107;
+        height: 25%;
+    }
+
+    .wp_block{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 95vw;
+        height: 25vh;
+    
+    }
+    .number_strong p{
+        font-size: 30px;
+        font-weight: 20;
+        margin-top: 10px;
+    }
+    
+
+    [data-separator] {
+        margin-bottom:1.6rem;
+        padding-bottom: 1.6rem
+    }
+
+    [data-separator]:after {
+        bottom: 0;
+        height: 2px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 270px
+    }
+
+    [data-separator]+div:not(:empty):last-child {
+        padding-bottom: 1.6rem;
+        position: relative
+    }
+
+    [data-separator]+div:not(:empty):last-child:after {
+        background-color: currentColor;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        width: 270px
+    }
+}
+
+@media(min-width: 40em) {
+    [data-separator]:after {
+        height: 75%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 4px;
+    }
+
+    [data-separator=right]:after {
+        right: -0.5rem;
+        
+    }
+
+    [data-separator=left]:after {
+        left: -2rem
+        
+    }
+}
+
+.number_strong{
+    font-size: 50px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.overview_title{
+
+    margin: 0;
+
+}

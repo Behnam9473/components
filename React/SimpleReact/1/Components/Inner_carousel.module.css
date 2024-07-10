@@ -1,0 +1,22 @@
+.responsive-container {
+  display: flex;
+  border: 3px solid #ecbb17;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.cent {
+  display: inline-flex;
+  justify-content: center;
+  max-height: 40vh;
+  max-width: 70vw;
+}
+
+.responsive-container_img {
+  border-radius: 4px;
+  object-fit: fill;
+  margin: 0px;
+  overflow: hidden;
+
+}
+
